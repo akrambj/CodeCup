@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --Montserrat : "Montserrat ,sans-serif";
+}
+
+
+body {
+    font-family: var(--Montserrat);
+    background-color: #16304C;
+    color: white;
+}
+
+
+.navItem {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.navLink {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.navLink:hover {
+    color: #FFC300;
+    transition-duration: 300ms;
+    text-transform: capitalize;
+}
+
+
+#open.open {
+    display: none;
+    transition-duration: 300ms;
+}
+
+#navMenu.active {
+    right: 10px;
+    transition-duration: 300ms;
+}
+
+
+@media (max-width: 768px) {
+    .navLink:hover {
+            color: #16304C;
+        }
+}
+
+.gdg {
+    line-height: 40px;
+}
+
+.gdg span {
+    color: #FFC300;
+}
+
+.swiper-pagination-bullet.active {
+    background-color: #FFC300;
+}
