@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Cup</title>
     <link rel="stylesheet" href="/dist/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" href="/imgs/gip.png">
 
 
 </head>
 <body class="font-Montserrat">
     <!-- header section -->
-    <header id="header" data-aos="fade-down" class="fixed top-0 left-0 w-screen h-24  p-6 md:px-20 flex justify-between items-center z-10 md:shadow-md">
+    <header id="header" data-aos="zoom-in" class="fixed top-0 left-0 w-screen h-24  p-6 md:px-20 flex justify-between items-center z-10 md:shadow-md">
         <!-- Logo -->
         <div class="logo" data-aos="slide-right">
             <span>
@@ -28,26 +29,26 @@
             </div>
             <!-- NavBar -->
             <nav id="mavBar" class="flex items-center">
-                <div id="navMenu" class="absolute md:hidden -right-full top-28 bg-Yellow w-[200px] h-[390px] rounded-xl">
+                <div id="navMenu" class="absolute md:hidden -right-full duration-500 top-28 bg-Yellow w-[200px] h-[390px] rounded-xl">
                     <!-- Mobile MenuBar -->
-                    <ul class="navMenu text-center py-3">
+                    <ul class="navMenu text-center py-5">
                         <li class="">
                             <a class="navLink" href="#">Home</a>
                         </li>
-                        <li class="navItem">
-                            <a class="navLink" href="#">About</a>
+                        <li class="max-sm:my-4">
+                            <a class="navLink" href="#CodeCup">Code Cup</a>
                         </li>
                         <li class="navItem">
-                            <a class="navLink" href="#">Partners</a>
+                            <a class="navLink" href="#About">About</a>
                         </li>
                         <li class="navItem">
-                            <a class="navLink" href="#">Speakers</a>
+                            <a class="navLink" href="#Judges">Judges</a>
                         </li>
                         <li class="navItem">
-                            <a class="navLink" href="#">Judges</a>
+                            <a class="navLink" href="#Partners">Partners</a>
                         </li>
                         <li class="navItem">
-                            <a class="navLink" href="#">Agenda</a>
+                            <a class="navLink" href="#Agenda">Agenda</a>
                         </li>
                     </ul>
                 </div>
@@ -57,16 +58,19 @@
                             <a class="navLink" href="#">Home</a>
                         </li>
                         <li class="">
-                            <a class="navLink" href="#">About</a>
+                            <a class="navLink" href="#CodeCup">Code Cup</a>
                         </li>
                         <li class="">
-                            <a class="navLink" href="#">Partners</a>
+                            <a class="navLink" href="#About">About</a>
                         </li>
                         <li class="">
-                            <a class="navLink" href="#">Speakers</a>
+                            <a class="navLink" href="#Judges">Judges</a>
                         </li>
                         <li class="">
-                            <a class="navLink" href="#">Agenda</a>
+                            <a class="navLink" href="#Partners">Partners</a>
+                        </li>
+                        <li class="">
+                            <a class="navLink" href="#Agenda">Agenda</a>
                         </li>
                 </ul>
             </nav>
@@ -103,7 +107,7 @@
             <img data-aos="fade-right" class="absolute bottom-[400px] left-[150px] md:bottom-[10px] md:left-[80%]" src="/imgs/par-main.png" alt="icons">
         </div>
     </main>
-    <section id="codecup" class="bg-White text-[#000000]">
+    <section id="CodeCup" class="bg-White text-[#000000] overflow-x-hidden">
         <div class="text-center pt-10">
             <button data-aos="fade-down" class="bg-Blue w-[300px] md:w-[450px] h-[60px] md:h-[80px] border-2 border-solid border-Yellow rounded-lg hover:bg-Yellow hover:duration-200 hover:border-Blue
             ">
@@ -111,12 +115,12 @@
             </button>
         </div>
         <div class="py-6 md:py-10 px-7 max-xs:px-16 md:px-20 md:flex md:items-start md:gap-x-28">
-            <img src="/imgs/image 2 1.png" data-aos="slide-left" class="object-contain md:w-[550px]" alt="our team">
-            <h2 data-aos="slide-right" class="max-sm:text-center md:w-[400px] md:leading-[45px] pt-3 text-xl font-medium md:pt-6 md:text-4xl">“Code Cup” is a live programming competition divided into three rounds where competitors solve a programming problem
+            <img src="/imgs/image 2 1.png" data-aos="slide-right" class="object-contain md:w-[550px]" alt="our team">
+            <h2 data-aos="slide-left" class="max-sm:text-center md:w-[400px] md:leading-[45px] pt-3 text-xl font-medium md:pt-6 md:text-4xl">“Code Cup” is a live programming competition divided into three rounds where competitors solve a programming problem
             given by the organiser.</h2>
         </div>
     </section>
-    <section class="about-us">
+    <section id="About">
         <div data-aos="fade-right" class="about max-sm:text-center flex items-center py-5 md:py-10 md:px-20">
             <img  class="max-sm:w-[100px]" src="/imgs/arrow-main-02.png" alt="arrow">
             <h1 class="text-4xl md:text-5xl font-bold
@@ -136,7 +140,7 @@
         </div>
     </section>
    
-  <section class="judges  text-White max-sm:text-center">
+  <section id="Judges" class="judges  text-White max-sm:text-center">
         <div data-aos="fade-down" class="about max-sm:text-center flex items-center justify-start flex-row-reverse py-5 md:py-10 md:px-20">
             <img class="max-sm:w-[100px]" src="/imgs/arrow-03.png" alt="arrow">
             <h1 class="text-2xl md:text-5xl font-bold 
@@ -144,45 +148,35 @@
         </div>
         <div class="swiper mySwiper  max-sm:text-center w-[90%] h-[400px]">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide md:px-6">
                     <div class="md:flex md:flex-row-reverse">
-                    <div data-aos="fade-down" class="md:pr-[350px]">
-                    <h1 class="font-bold
-                    text-4xl ">Name</h1>
-                    <h3 class="mt-4 text-3xl font-bold">Full Stack Developer</h3>
-                    </div>
-                    <img data-aos="slide-up" class="md:pr-10" src="/imgs/speaker.png" alt="">
-                </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="md:flex md:flex-row-reverse">
-                        <div class="md:pr-[350px]">
+                        <div data-aos="fade-down pb-[30px]" class="md:pr-[350px]">
                             <h1 class="font-bold
-                                        text-4xl ">Name</h1>
-                            <h3 class="mt-4 text-3xl font-bold">Full Stack Developer</h3>
+                                    text-4xl ">Sohaib Zouambia</h1>
+                                    <h3 class="max-sm:hidden">Full Stack Developer</h3>
+                        </div>
+                        <img data-aos="slide-up" class="md:pr-10" src="/imgs/speaker.png" alt="">
                     </div>
-                    <img class="md:pl-10" src="/imgs/speaker.png" alt="">
                 </div>
-                </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide md:px-6">
                     <div class="md:flex md:flex-row-reverse">
-                        <div class="md:pr-[350px]">
+                        <div data-aos="fade-down pb-[30px]" class="md:pr-[350px]">
                             <h1 class="font-bold
-                                        text-4xl ">Name</h1>
-                            <h3 class="mt-4 text-3xl font-bold">Full Stack Developer</h3>
+                                    text-4xl ">imadeddine khellaf</h1>
+                                    <h3 class="max-sm:hidden">Full Stack Developer</h3>
+                        </div>
+                        <img data-aos="slide-up" class="md:pr-10" src="/imgs/speaker.png" alt="">
                     </div>
-                    <img class="md:pl-10" src="/imgs/speaker.png" alt="">
                 </div>
-                </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide md:px-6">
                     <div class="md:flex md:flex-row-reverse">
-                        <div class="md:pr-[350px]">
+                        <div data-aos="fade-down pb-[30px]" class="md:pr-[350px]">
                             <h1 class="font-bold
-                                        text-4xl ">Name</h1>
-                            <h3 class="mt-4 text-3xl font-bold">Full Stack Developer</h3>
+                                    text-4xl ">Rezazi Mohamed Abdessamed</h1>
+                                    <h3 class="max-sm:hidden">Full Stack Developer</h3>
+                        </div>
+                        <img data-aos="slide-up" class="md:pr-10" src="/imgs/speaker.png" alt="">
                     </div>
-                    <img class="md:pl-10" src="/imgs/speaker.png" alt="">
-                </div>
                 </div>
 
             </div>
@@ -192,11 +186,11 @@
         </div>
     </section>
 
-<section class="partners pt-10 bg-White text-Blue max-sm:text-center">
+<section id="Partners" class="partners pt-10 bg-White text-Blue max-sm:text-center">
     <div data-aos="fade-down" class=" about max-sm:text-center flex items-center py-5 md:py-10 md:px-20">
         <img class="max-sm:w-[100px]" src="/imgs/arrow-main-02.png" alt="arrow">
         <h1 class="text-2xl md:text-5xl font-bold 
-            ">Our Partners</h1>
+            ">Our Speakers</h1>
     </div>
     <div class="swiper mySwiper  max-sm:text-center w-[90%] h-[400px]">
         <div class="swiper-wrapper">
@@ -204,7 +198,7 @@
                 <div class="md:flex">
                     <div data-aos="slide-down" class="md:pl-[350px]">
                         <h1 class="font-bold
-                    text-4xl ">Name</h1>
+                    text-4xl ">Mohammed Mouzaoui</h1>
                         <h3 class="mt-4 text-3xl font-bold">Full Stack Developer</h3>
                     </div>
                     <img data-aos="slide-up" class="md:pl-10" src="/imgs/speaker.png" alt="">
@@ -214,27 +208,7 @@
                 <div class="md:flex">
                     <div class="md:pl-[350px]">
                         <h1 class="font-bold
-                    text-4xl ">Name</h1>
-                        <h3 class="mt-4 text-3xl font-bold">Full Stack Developer</h3>
-                    </div>
-                    <img class="md:pl-10" src="/imgs/speaker.png" alt="">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="md:flex">
-                    <div class="md:pl-[350px]">
-                        <h1 class="font-bold
-                    text-4xl ">Name</h1>
-                        <h3 class="mt-4 text-3xl font-bold">Full Stack Developer</h3>
-                    </div>
-                    <img class="md:pl-10" src="/imgs/speaker.png" alt="">
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="md:flex">
-                    <div class="md:pl-[350px]">
-                        <h1 class="font-bold
-                    text-4xl ">Name</h1>
+                    text-4xl ">Yasser Cherfaoui</h1>
                         <h3 class="mt-4 text-3xl font-bold">Full Stack Developer</h3>
                     </div>
                     <img class="md:pl-10" src="/imgs/speaker.png" alt="">
@@ -247,117 +221,157 @@
         <div data-aos="slide-up" class="swiper-pagination"></div>
     </div>
 </section>
-<section class="Agenda bg-White text-Blue pb-10">
+<section id="Agenda" class="Agenda bg-White text-Blue pb-10 overflow-hidden">
     <div class="text-center py-16">
         <button data-aos="flip-up" class="bg-Yellow hover:bg-Blue hover:text-White  w-[200px] h-[60px] text-3xl font-bold border-2 border-solid border-b-Blue hover:border-Yellow hover:duration-300">Agenda</button>
     </div>
     <div data-aos="slide-up" class="border-2 border-solid border-Yellow w-[90%] mx-auto pb-5 rounded-md">
+        <div class="text-center pt-4">
+            <button class="bg-Blue border-2 border-solid border-Yellow w-[200px] h-[60px] text-White text-2xl font-bold">Day One</button>
+        </div>
         <div data-aos="flip-left"  class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">9:00-10:00</h2>
+                <h2 class="py-2 text-3xl">7:00pm-7:10pm</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">Check in</h3>
+                <h3 class="text-2xl font-bold">Opening Ceremony</h3>
             </div>
         </div>
         <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">10:00-10:45</h2>
+                <h2 class="py-2 text-3xl">7:10-7:35</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">workshop</h3>
+                <h3 class="text-2xl font-bold">Talk one</h3>
             </div>
         </div>
         <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">11:00-11:30</h2>
+                <h2 class="py-2 text-3xl">7:35-8:00</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">Start Competition</h3>
+                <h3 class="text-2xl font-bold">Talk Two</h3>
             </div>
         </div>
         <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">9:00-10:00</h2>
+                <h2 class="py-2 text-3xl">20:00</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">Check in</h3>
+                <h3 class="text-2xl font-bold">Competition start</h3>
             </div>
         </div>
         <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">10:00-10:45</h2>
+                <h2 class="py-2 text-3xl">8:00-9:30</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">workshop</h3>
+                <h3 class="text-2xl font-bold">Coding</h3>
             </div>
         </div>
         <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">11:00-11:30</h2>
+                <h2 class="py-2 text-3xl">9:30-9:50</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">Start Competition</h3>
+                <h3 class="text-2xl font-bold">Assessing the solutions</h3>
             </div>
         </div>
         <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">9:00-10:00</h2>
+                <h2 class="py-2 text-3xl">9:50-10:00</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">Check in</h3>
+                <h3 class="text-2xl font-bold">Winners announcement</h3>
+            </div>
+        </div>
+        </div>
+    <div data-aos="slide-up" class="mt-10 border-2 border-solid border-Yellow w-[90%] mx-auto pb-5 rounded-md">
+        <div class="text-center pt-4">
+            <button class="bg-Blue border-2 border-solid border-Yellow w-[200px] h-[60px] text-White text-2xl font-bold">Day Two</button>
+        </div>
+        <div data-aos="flip-left"  class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
+            
+            <div class="time font-bold">
+                <h2 class="py-2 text-3xl">20:00</h2>
+            </div>
+            <div class="event">
+                <h3 class="text-2xl font-bold">Competition start</h3>
             </div>
         </div>
         <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">10:00-10:45</h2>
+                <h2 class="py-2 text-3xl">8:00-9:30</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">workshop</h3>
+                <h3 class="text-2xl font-bold">Coding</h3>
             </div>
         </div>
         <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">11:00-11:30</h2>
+                <h2 class="py-2 text-3xl">9:30-9:50</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">Start Competition</h3>
+                <h3 class="text-2xl font-bold">Assessing the solutions</h3>
             </div>
         </div>
         <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">9:00-10:00</h2>
+                <h2 class="py-2 text-3xl">9:50-10:00</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">Check in</h3>
+                <h3 class="text-2xl font-bold">Winners announcement</h3>
+            </div>
+        </div>
+        </div>
+    <div data-aos="slide-up" class="mt-10 border-2 border-solid border-Yellow w-[90%] mx-auto pb-5 rounded-md">
+        <div class="text-center pt-4">
+            <button class="bg-Blue border-2 border-solid border-Yellow w-[200px] h-[60px] text-White text-2xl font-bold">Day Three</button>
+        </div>
+        <div data-aos="flip-left"  class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
+            
+            <div class="time font-bold">
+                <h2 class="py-2 text-3xl">20:00</h2>
+            </div>
+            <div class="event">
+                <h3 class="text-2xl font-bold">Competition start</h3>
             </div>
         </div>
         <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">10:00-10:45</h2>
+                <h2 class="py-2 text-3xl">8:00-9:30</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">workshop</h3>
+                <h3 class="text-2xl font-bold">Coding</h3>
             </div>
         </div>
         <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
             
             <div class="time font-bold">
-                <h2 class="py-2 text-3xl">11:00-11:30</h2>
+                <h2 class="py-2 text-3xl">9:30-9:50</h2>
             </div>
             <div class="event">
-                <h3 class="text-2xl font-bold">Start Competition</h3>
+                <h3 class="text-2xl font-bold">Assessing the solutions</h3>
+            </div>
+        </div>
+        <div data-aos="flip-left" class="text-center border-2 border-solid border-Yellow w-[89%] mx-auto pb-5 rounded-md shadow-md bg-Blue text-White hover:bg-Yellow hover:border-Blue hover:text-Blue hover:duration-200 pt-5 mt-5 cursor-pointer">
+            
+            <div class="time font-bold">
+                <h2 class="py-2 text-3xl">9:50-10:00</h2>
+            </div>
+            <div class="event">
+                <h3 class="text-2xl font-bold">Winners announcement</h3>
             </div>
         </div>
         </div>
